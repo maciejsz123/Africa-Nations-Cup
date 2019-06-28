@@ -1,0 +1,44 @@
+{
+  "name": "tipster-app",
+  "version": "0.1.0",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express-session": "^1.16.1",
+    "glyphicons": "^0.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "mysql": "^2.17.1",
+    "node-sass": "^4.11.0",
+    "npm": "^6.9.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "cd src/components/accounts && nodemon queries.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start\""
+  },
+  "proxy": "http://localhost:5000/",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
