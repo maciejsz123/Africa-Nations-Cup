@@ -1,0 +1,8 @@
+.changePageHover:hover {
+  background-color: #fff8e1 !important;
+  cursor: pointer;
+}
+
+.activeItem {
+  border-bottom: 3px solid #f57f17;
+}
